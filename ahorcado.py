@@ -48,6 +48,7 @@ def juego():
         validarLetra(letra)
         
         if (ganaste()):
+            imprimirPalabra()
             print("Adivinaste la palabra. Ganaste")
             break
         elif (perdiste()):

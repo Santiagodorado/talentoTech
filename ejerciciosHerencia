@@ -1,0 +1,34 @@
+#Herencia 1
+class Persona:
+    def __init__(self, nombre, edad):
+        self.nombre = nombre
+        self.edad = edad
+
+class Alumno(Persona):
+    def __init__(self, nombre, edad):
+        super().__init__(self, nombre, edad)
+
+
+#Herencia 2
+class Mascota:
+    def __init__(self, nombre, edad, cantidadPatas):
+        self.nombre = nombre
+        self.edad = edad
+        self.cantidadPatas = cantidadPatas
+
+class Perro(Mascota):
+    def __init__(self, nombre, edad, cantidadPatas):
+        super().__init__(self, nombre, edad, cantidadPatas)
+
+
+#Herencia 3
+class Vehiculo:
+    def acelerar():
+        pass
+
+    def frenar():
+        pass
+
+class Automovil(Vehiculo):
+    def __init__(self):
+        super().__init__(self)
